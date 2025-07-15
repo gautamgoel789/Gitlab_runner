@@ -1,0 +1,9 @@
+ 
+
+docker exec -it gitlab-runner gitlab-runner register   
+--url https://gitlab.gautamgoel.shop   --registration-token GR1348941C7WzZmFh61zn8eJCBx5o   
+--executor docker   --description "Docker Runner"   
+--docker-image "docker:latest"   
+--docker-privileged   
+--docker-volum
+es /var/run/docker.sock:/var/run/docker.sock
